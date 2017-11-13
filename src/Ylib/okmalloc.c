@@ -900,8 +900,8 @@ VOIDPTR ptr;
 
 VOID Ysafe_cfree(ptr)
 VOIDPTR ptr;
-{
-    cfree(ptr);
+{   
+    free(ptr);
     return;
 }
 
