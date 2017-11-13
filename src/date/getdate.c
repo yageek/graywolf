@@ -52,7 +52,7 @@ static char SccsId[] = "@(#) getdate.c version 1.2 5/12/90" ;
 
 main( argc , argv )
 int argc ;
-char *argv ;
+char **argv ;
 {
 
 FILE        *fp ;
