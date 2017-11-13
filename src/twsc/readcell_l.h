@@ -21,7 +21,7 @@ int yyleng; extern char yytext[];
 int yymorfg;
 extern char *yysptr, yysbuf[];
 int yytchar;
-#ifdef linux
+#if defined(__linux__) || defined(__APPLE__)
 FILE *yyin = (FILE *)NULL, *yyout = (FILE *)NULL;
 #else
 FILE *yyin ={stdin}, *yyout ={stdout};

@@ -1,6 +1,7 @@
 cmake_minimum_required (VERSION 2.6)
 project (graywolf)
 
+add_definitions("-std=c89 -Wno-return-type")
 find_package(PkgConfig)
 find_package(X11)
 INCLUDE(CheckIncludeFiles)
